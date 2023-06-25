@@ -1,118 +1,112 @@
- 
-  body {
-    font-family: Tahoma;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-  }
-  
-  header {
-    padding: 40px;
-    text-align: center;
-    background: rgb(224, 181, 164);
-    color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(224, 181, 164);
-    justify-content: space-between;
-    
-  }
-  .my-name{
-    display: flex;
-    background-color: rgb(224, 181, 164);
-    color: #fff;
-    padding: 10px;
-    font-size: 30px;
-    align-items: center;
-  }
-
-.headshot{
-    display: flex;
-    justify-content: left;
-    width: 30%;
+/* styled the body so my entire page will automatically know fonts specifications and background */
+body {
+  font-family: sans-serif;
+  color: #fff;
+  background-color: rgb(226, 181, 164);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
-  .my-image{
-    width: 30%;
-    align-items: center;
-  }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+ padding: 10px;
+  text-align: center; 
+}
+
+section h1 {
+  align: left;
+}
+
+.headshot {
+display: flex;
+justify-content: left;
+align-items: center;
+width: 30%;
+}
+
+.my-name {
+display: flex;
+flex-wrap: wrap;
+align-items:center;
+justify-content: space-between;
+padding: 10px;
+font-size: larger;
+}
+
 .header-links{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+flex-direction: row;
 }
 
-  nav a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  footer {
-    padding: 20px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
-  }
-  
+.my-image{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* project specifications for all work */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 5;
+  padding: 40px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+}
+
+.project h2 {
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.project p {
+  text-align: center;
+  color: black;
+}
+
+.project img {
+  width: 100%;
+  border: #fff;
+  border-radius: 10px;
+}
+
+.project-display {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 30px;
+  padding: 5px;
+  flex: 0 0 250px;
+  margin: 10px;
+} 
+
+footer {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  body,
+  main,
+  nav,
   .product {
-    display: flex;
-    width: 90%;
-    margin: 1% auto;
-  }
-  
-  .product button {
-    font-size: 150%;
+    flex-direction: column;
   }
 
-  /* added box shadow, border-radius and style for each of the work picture */
-  .display {
-    background-color: rgb(224, 181, 164);
-    border-style: solid;
-    border-width: 1.5px;
-    border-radius: 30px;
-    padding: 5px;
-    flex: 0 0 250px;
-    box-shadow: 4px #aaaaaa;
-    margin: 10px;
-  }
-
-  .display-conditions {
-    flex: 4;
-    background-color: rgb(224, 181, 164);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  
-  /* changed product details to match desired format */
   .product-details {
-    flex: 4;
-    padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    margin-left: 0;
   }
-  
-  @media (max-width: 768px) {
-    main,
-    nav,
-    .product {
-      flex-direction: column;
-    }
-  
-    .product-details {
-      margin-left: 0;
-    }
-  }
+}
