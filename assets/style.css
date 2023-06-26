@@ -65,9 +65,7 @@ flex-direction: row;
   display: flex;
   flex: 5;
   padding: 40px;
-  justify-content: space-evenly;
   align-items: flex-start;
-  width: 30px;
   margin: auto;
 }
 
